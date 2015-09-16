@@ -35,7 +35,7 @@ import com.vaadin.ui.Button.ClickEvent;
 public class MainView extends HorizontalLayout implements View {
     private static final long serialVersionUID = -3398565663865641952L;
 
-    public static final String NAME = "MBPeT";
+    public static String NAME = "home";	//MBPeT
     String displayName = "";
     
     VerticalLayout menuLayout = new VerticalLayout();
@@ -138,6 +138,7 @@ public class MainView extends HorizontalLayout implements View {
     public void enter(ViewChangeEvent event) {
 
     	if (displayName.equals("")) {
+    		
     		// Get the user name from the session
     		displayName = String.valueOf(getSession().getAttribute("user"));
     		// And pass it to the menu to disaply it

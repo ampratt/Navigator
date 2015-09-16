@@ -135,6 +135,10 @@ public class MBPeTMenu extends CustomComponent implements Action.Handler{
 			            
 			            UI.getCurrent().getPage().setLocation(
 			        			VaadinServlet.getCurrent().getServletContext().getContextPath());	//"/"
+			         
+			            // Refresh this view, should redirect to login view
+//			            UI.getCurrent().getNavigator().navigateTo(LoginView.NAME);
+			            return;
 		        	}
 		        	
 		            Notification.show("Action " + selectedItem.getText(),

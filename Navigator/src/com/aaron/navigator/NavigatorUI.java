@@ -96,7 +96,7 @@ public class NavigatorUI extends UI {
 	
     private void releaseResources() {
         // Redirect this page immediately
-        getPage().setLocation("/MBPeT");
+        getPage().setLocation("/");	//MBPeT
         
         // Close the session
         getSession().close();
